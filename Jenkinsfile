@@ -1,9 +1,9 @@
 pipeline {
 agent any
-stages {
-    tools{
-        nodejs 'NodeJS'
+tools {
+    nodejs 'NodeJS'
     }
+stages {
     stage('Checkout') {
         steps {
             git branch: 'main', url: 'https://github.com/Thao-Lo/8.2CDevSecOps.git'
